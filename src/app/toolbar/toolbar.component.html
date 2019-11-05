@@ -1,0 +1,15 @@
+<mat-toolbar #toolbar color="accent">
+    <span>
+        <button mat-icon-button (click)="clickMenu()">
+            <mat-icon *ngIf="menuOpened">menu_opened</mat-icon>
+            <mat-icon *ngIf="!menuOpened">menu</mat-icon>
+        </button>
+    </span>
+    <span>We<b>B</b>ash</span>
+    <span class="fill-remaining-space"></span>
+    <span>
+        <button mat-icon-button>
+            <mat-icon aria-hidden="false" aria-label="User">account_box</mat-icon>
+        </button>
+    </span>
+</mat-toolbar>

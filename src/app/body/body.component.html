@@ -1,0 +1,20 @@
+<mat-drawer-container>
+    <mat-drawer #drawer mode="side">
+        <span>
+            <button mat-icon-button>
+                <mat-icon *ngIf="!menuOpened">settings_application</mat-icon>
+                Load config file
+            </button>
+        </span> 
+        <br>
+        <span>
+            <button mat-icon-button>
+                <mat-icon *ngIf="!menuOpened">help</mat-icon>
+                About
+            </button>
+        </span>
+    </mat-drawer>
+    <mat-drawer-content>
+        <app-main></app-main>
+    </mat-drawer-content>
+</mat-drawer-container>

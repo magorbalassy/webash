@@ -1,0 +1,21 @@
+/*mat-drawer-content {
+    padding: 10px;
+
+    flex: 1 1 auto; 
+}
+*/
+mat-drawer {
+    width: 15%;
+    padding: 10px;
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: flex-start;
+    overflow: auto;
+    overscroll-behavior-y: contain;
+}
+
+mat-drawer-container, mat-drawer-content {
+    height: 100%;
+    border: 0px solid #555;
+    flex: 1 1 auto; 
+}
